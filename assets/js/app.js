@@ -169,6 +169,9 @@ const onpostadd=(eve)=>{
                   </div>`
 
                   postscontainer.append(card);
+
+                  updateBtn.classList.remove('d-none');
+                  submitBtn.classList.add('d-none');
                   loader.classList.add('d-none');
                   snackBar(`New Post is created successfully !!!`, 'success');
 
